@@ -20,6 +20,6 @@ const router = express.Router();
 // TODO: Add auth middleware
 router
   .route('/')
-  .post(upload.single('cat'), makeThumbnail, getCoordinates, uploadPost);
+  .post(upload.single('animal'), makeThumbnail, getCoordinates, uploadPost);
 
 export default router;
